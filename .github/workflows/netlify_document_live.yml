@@ -26,4 +26,3 @@ jobs:
         working-directory: docs/document/website
       - name: Deploying on Netlify Production Environment
         run: netlify deploy --prod --dir=./docs/document/website/build/kintone-ui-component --auth=${{ secrets.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
