@@ -2,7 +2,11 @@ name: Netlify Document Production Environment
 
 on:
   push:
-
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
 jobs:
   publishOnMasterRelease:
     name: Deploying on Netlify Document Production Environment
