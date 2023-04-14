@@ -7,7 +7,7 @@ original_id: attachment
 
 ## Overview
 
-The Attachment component allows the user to upload files by selecting or dragging hello 3197
+The Attachment component allows the user to upload files by selecting or dragging hello 3197 hihih
 hahahah
 
 <div class="sample-container" id="attachment">
