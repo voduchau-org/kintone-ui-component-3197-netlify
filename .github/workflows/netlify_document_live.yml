@@ -11,7 +11,6 @@ jobs:
   publishOnMasterRelease:
     name: Deploying on Netlify Document Production Environment
     runs-on: ubuntu-latest
-    if: github.event_name == 'release' && github.event.action == 'released'
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
