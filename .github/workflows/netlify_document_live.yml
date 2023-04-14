@@ -1,9 +1,7 @@
 name: Netlify Document Production Environment
 
 on:
-  release:
-    types:
-      - released
+  push:
 
 jobs:
   publishOnMasterRelease:
