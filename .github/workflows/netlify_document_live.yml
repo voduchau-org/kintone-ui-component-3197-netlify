@@ -32,4 +32,4 @@ jobs:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_DOCUMENT_ID }}
           DIR: './docs/document/website/build/kintone-ui-component'
         run: |
-          netlify deploy --prod=false --open  --alias=production --dir=$DIR --site=$NETLIFY_SITE_ID --auth=$NETLIFY_AUTH_TOKEN
+          netlify deploy --prod --open  --alias=production --dir=$DIR --site=$NETLIFY_SITE_ID --auth=$NETLIFY_AUTH_TOKEN
