@@ -24,12 +24,7 @@ jobs:
       - name: Build document
         run: npm run build
         working-directory: docs/document/website
-      - name: Install Netlify CLI
-        run: npm install -g netlify-cli
-      - name: Build and Deploy
-        env:
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_DOCUMENT_ID }}
-          DIR: './docs/document/website/build/kintone-ui-component'
-        run: |
-          netlify deploy --prod --open --dir=$DIR --site=$NETLIFY_SITE_ID --auth=$NETLIFY_AUTH_TOKEN
+      - name: Install Netlify
+        run: npm i netlify-cli --no-save
+      - name: Deploy
+        run: netlify deploy --prod --dir=./docs/document/website/build/kintone-ui-component --auth=${{ secrets.NETLIFY_AUTH_TOKEN }} --site=${{ secrets.NETLIFY_DOCUMENT_ID }}

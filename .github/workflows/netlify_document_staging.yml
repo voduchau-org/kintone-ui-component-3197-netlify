@@ -37,4 +37,4 @@ jobs:
       - name: Install Netlify
         run: npm i netlify-cli@9 --no-save
       - name: Deploy
-        run: netlify deploy --dir=./docs/document/website/build/kintone-ui-component --alias=staging --auth=${{ secrets.NETLIFY_AUTH_TOKEN }} --site=${{ secrets.NETLIFY_DOCUMENT_ID }}
+        run: netlify deploy --dir=./docs/document/website/build/kintone-ui-component --alias=staging-hehe --auth=${{ secrets.NETLIFY_AUTH_TOKEN }} --site=${{ secrets.NETLIFY_DOCUMENT_ID }}
