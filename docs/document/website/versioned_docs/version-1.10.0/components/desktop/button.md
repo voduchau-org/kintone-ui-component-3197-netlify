@@ -6,7 +6,7 @@ original_id: button
 ---
 
 ## Overview
- 
+
 The Button component allows the user to create and display buttons 29/08 123
 
 <div class="sample-container" id="button">
