@@ -22,7 +22,7 @@ jobs:
         run: npm ci
         working-directory: docs/document/website
       - name: Build document
-        run: npm run build
+        run: npm run build-docusarus
         working-directory: docs/document/website
       - name: Install Netlify
         run: npm i netlify-cli --no-save
